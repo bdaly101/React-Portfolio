@@ -1,0 +1,156 @@
+/* App.css */
+/* App.css */
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header {
+    background-color: #1c1c1e;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+  }
+  
+  .nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .nav-item {
+    float: left;
+  }
+  
+  .nav-link {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .nav-link:hover {
+    background-color: #111;
+  }
+  
+  .footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .portfolio {
+    padding: 50px;
+    text-align: center;
+    background-color: #121212; /* Optional: Set a background color for the portfolio section */
+  }
+  
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+  }
+  
+  .project {
+    display: flex; /* Use flexbox to center the title */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 200px; /* Set a fixed height, or use 'min-height' for variable content */
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative; /* Needed for absolute positioning of the title */
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .project-image {
+    max-width: 100%; /* Ensures the image is not wider than the card */
+    max-height: 100%; /* Ensures the image is not taller than the card */
+    object-fit: contain; /* Contains the image within its dimensions, without cropping */
+  }
+  
+  .project:hover {
+    transform: scale(1.05);
+    z-index: 10;
+  }
+  
+  .project-link {
+    position: absolute; /* Position the title absolutely to be on top of the background */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white; /* Ensure the title is visible on the image */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay for readability */
+    opacity: 0; /* Hide the title by default */
+    transition: opacity 0.3s ease;
+    border-radius: 10px; /* Match the border radius of the project card */
+  }
+  
+  .project:hover .project-link {
+    opacity: 1; /* Show the title on hover */
+  }
+  
+  .project-title {
+    text-align: center;
+    font-size: 1.5em; /* Adjust font size as necessary */
+    color: #ffffff;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark background for the text for readability */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .project-title:hover {
+    background-color: rgba(0, 0, 0, 0.5); /* Lighter background on hover */
+  }
+  
+  .contact-form {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #1c1c1e;
+    border-radius: 10px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #2c2c2e;
+    color: white;
+  }
+  
+  .contact-form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    background-color: #4fc3f7;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .contact-form button:hover {
+    background-color: #3bafcf;
+  }
+  
