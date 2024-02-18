@@ -7,13 +7,13 @@ function Portfolio() {
     {
       id: 1,
       name: 'Weather App',
-      image: '../public/assets/images/projectImages/weatherApp.png',
+      image: '/public/assets/images/projectImages/weatherApp.png',
       link: 'https://bdaly101.github.io/Weatherpage/',
     },
     {
       id: 2,
       name: 'Calendar Planner',
-      image: '../public/assets/images/projectImages/calendarApp.png',
+      image: '/public/assets/images/projectImages/calendarApp.png',
       link: 'https://bdaly101.github.io/Calendar-Planner/',
     },
     // Add more projects here
