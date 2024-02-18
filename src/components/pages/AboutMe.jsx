@@ -2,7 +2,7 @@ export default function AboutMe() {
     return (
       <div>
         
-        <img src="/public/assets/images/myPic.png" alt="Brendan Daly" style={{ width: '100px', transform: 'rotate(90deg)' }} />
+        <img src="/assets/images/myPic.png" alt="Brendan Daly" style={{ width: '100px', transform: 'rotate(90deg)' }} />
         <h2>Brendan Daly</h2>
         
         <p>
