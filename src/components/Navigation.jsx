@@ -3,7 +3,7 @@
 function Navigation({ currentPage, handlePageChange }) {
     return (
       <ul className="nav nav-tabs">
-        <li className="nav-item">
+        <li className="nav-item shiny-text">
           <a
             href="#aboutMe"
             onClick={() => handlePageChange('AboutMe')}
@@ -13,7 +13,7 @@ function Navigation({ currentPage, handlePageChange }) {
             About me
           </a>
         </li>
-        <li className="nav-item">
+        <li className="nav-item shiny-text">
           <a
             href="#portfolio"
             onClick={() => handlePageChange('Portfolio')}
@@ -32,7 +32,7 @@ function Navigation({ currentPage, handlePageChange }) {
             Contact
           </a>
         </li>
-        <li className="nav-item">
+        <li className="nav-item ">
           <a
             href="#resume"
             onClick={() => handlePageChange('Resume')}
